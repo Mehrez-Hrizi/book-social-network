@@ -8,8 +8,8 @@ RUN mvn clean package -DskipTests
 
 # Runtime stage
 FROM amazoncorretto:17
-ARG PROFILE=dev
-ARG APP_VERSION=1.0.0
+ARG PROFILE=prod
+ARG APP_VERSION=1.0.3
 ARG PORT=8088
 
 WORKDIR /app
