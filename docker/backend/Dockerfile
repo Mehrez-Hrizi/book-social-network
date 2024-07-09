@@ -22,6 +22,10 @@ ENV ACTIVE_PROFILE=${PROFILE}
 ENV JAR_VERSION=${APP_VERSION}
 ENV DB_URL=jdbc:postgresql://postgres-sql-bsn:5432/book_social_network
 
+ENV EMAIL_HOST_NAME=missing_host_name
+ENV EMAIL_USERNAME=missing_email_username
+ENV EMAIL_PASSWORD=missing_email_password
+
 CMD java -Dspring.profiles.active=${ACTIVE_PROFILE} -Dspring.datasource.url=${DB_URL} -jar book-network-${JAR_VERSION}.jar
 
 
